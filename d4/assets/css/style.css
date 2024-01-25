@@ -1,0 +1,182 @@
+/* IMPOSTAZIONI GENERALI */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-image: url(../img/sfondo.png);
+}
+
+
+/* HEADER */
+header {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(to top, rgb(3, 109, 134), rgb(0, 158, 196));
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    box-shadow: 1px 3px 3px black;
+
+}
+
+ul {
+    list-style: none;
+    list-style-position: inside;
+}
+
+ul a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#nav a:hover {
+    color: purple;
+}
+
+#nav a::before {
+    content: "\22c6\0020";
+}
+
+/* MAIN */
+main {
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 1px 3px 3px grey;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+#author {
+    color: grey;
+}
+
+b {
+    color: purple;
+}
+
+code {
+    background-color: lightgray;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+/* TABELLE */
+caption {
+    font-style: italic;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(6, 82, 196);
+    color: white;
+}
+
+th {
+    font-weight: 300;
+    padding: 5px;
+}
+
+tbody {
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+table tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+tr {
+    padding: 5px;
+    border: 1px 1px grey;
+}
+
+table tr:last-child {
+    border-bottom: 2px solid rgb(6, 82, 196);
+}
+
+#tool {
+    color: rgb(0, 158, 196);
+    font-weight: bold;
+}
+
+#tool:hover {
+    color: purple;
+}
+
+/* FORM */
+#newsletter {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: lightgray;
+}
+
+#news {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+fieldset {
+    border-style: hidden;
+}
+
+#inserisci {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(6, 82, 196);
+    border-style: none;
+}
+
+/* ELEMENTI NELL' ASIDE */
+#articles {
+    text-align: center;
+}
+
+.altri-div {
+    background-color: lightgrey;
+    border: 1px solid rgb(156, 156, 156);
+    margin: 15px;
+    padding: 10px;
+}
+
+.altri-div p {
+    margin: 0;
+}
+
+.altri-div a:link {
+    color: rgb(0, 158, 196);
+    font-weight: bold;
+}
+
+.altri-div :last-child {
+    text-align: end;
+    font-size: small;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    background-image: linear-gradient(to top, rgb(52, 54, 54), rgb(8, 87, 104));
+    text-align: center;
+    color: white;
+    box-shadow: 3px 5px 3px grey;
+}
+
+footer a:link {
+    color: rgb(228, 0, 228);
+    font-weight: bold;
+}
