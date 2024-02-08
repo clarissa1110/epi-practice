@@ -1,0 +1,86 @@
+body {
+    height: 100vh;
+    text-align: center;
+    font-size: 2em;
+}
+
+body,
+header,
+main,
+h1 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1,
+.picked,
+#btnPick,
+#picked {
+    color: rgb(247, 238, 255);
+}
+
+header,
+.picked,
+#btnPick,
+#picked {
+    background-color: rgb(148, 0, 216);
+
+}
+
+header {
+    font-family: "Protest Strike", sans-serif;
+    width: 100%;
+    height: 100px;
+    padding: 25px 0 25px 0;
+}
+
+main {
+    background-color: rgba(137, 43, 226, 0.521);
+    padding: 5% 15% 5% 15%;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+#griglia {
+    max-width: 100%;
+}
+
+.cell {
+    display: inline-block;
+    text-align: center;
+    width: 10%;
+    height: 90px;
+    position: relative;
+    border-radius: 15%;
+    padding-top: 0px;
+}
+
+.numero {
+    transform: translateY(-50%);
+}
+
+#clicca {
+    margin-bottom: 25px;
+}
+
+#btnPick {
+    width: 200px;
+    height: 80px;
+    font-size: 1.2em;
+    border-style: none;
+    border-radius: 15px;
+}
+
+.picked {
+    background-color: rgb(148, 0, 216);
+}
+
+#picked,
+#estrazione {
+    display: inline;
+    font-size: 1.2em;
+
+}
