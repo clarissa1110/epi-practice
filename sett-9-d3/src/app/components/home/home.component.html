@@ -1,0 +1,29 @@
+<div class="container px-5 pb-5"> <!--home completa-->
+  <div class="row">
+    <div class="col-8"> <!--parte sinistra della home -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12"> <!--post in evidenza-->
+            <app-top-post></app-top-post>
+          </div>
+          <div class="col-12"> <!--post correlati - da suddividere in due col-6 in related.html-->
+            <app-related></app-related>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4"> <!--parte destra della home-->
+      <app-might-like></app-might-like>
+    </div>
+  </div>
+
+  <div class="row">
+    <app-single-post *ngFor="let post of posts" [post]="post">
+      <div class="d-flex flex-column">
+        <input type="text" [(ngModel)]="post.title" class="card-title form-control">
+        <textarea cols="30" rows="5" class="card-text form-control" [(ngModel)]="post.body"></textarea>
+        <button class="btn btn-success mt-2">SAVE</button>
+      </div>
+    </app-single-post>
+  </div>
+</div>

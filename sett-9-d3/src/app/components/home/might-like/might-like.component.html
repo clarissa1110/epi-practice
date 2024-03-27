@@ -1,0 +1,23 @@
+<div class="bg-body-secondary rounded-3 mt-5 px-5 py-3">
+    <h5 class="fw-semibold">Potrebbero piacerti:</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-white rounded-3 my-1 py-2" *ngFor="let post of mightLike">
+                <a href="#">{{post.title}}</a>
+                <br>
+                <h6 class="badge text-bg-primary text-white text-uppercase me-1" *ngFor="let tag of post.tags">{{tag}}</h6>
+                <p>{{post.reactions}}</p>
+            </div>
+        </div>
+    </div>
+    <h5 class="fw-semibold">Vedi anche:</h5>
+    <div class="row bg-white rounded-3">
+        <div class="col-12 py-2">
+            <a href="#">Post attivi</a>
+        </div>
+        <hr class="m-0">
+        <div class="col-12 py-2">
+            <a href="#">Post inattivi</a>
+        </div>
+    </div>
+</div>

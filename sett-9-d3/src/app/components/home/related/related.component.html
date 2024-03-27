@@ -1,0 +1,11 @@
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-6" *ngFor="let relate of related">
+            <h5 class="text-uppercase text-primary-emphasis fw-bold">{{relate.tags}}</h5>
+            <h2 class="m-0 fw-semibold">{{relate.title}}</h2>
+            <p class="text-secondary m-0">Reactions: {{relate.reactions}}</p>
+            <p>{{relate.body.slice(0, 150)}}...</p>
+            <a href="#">Leggi di più...</a>
+        </div>
+    </div>
+</div>

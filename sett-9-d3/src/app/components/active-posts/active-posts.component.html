@@ -1,0 +1,20 @@
+
+<div class="container text-center mt-4">
+    <h2>POST ATTIVI</h2>
+
+    <div class="container text-start">
+        <div class="row" >
+            <div class="col-12">
+                <div class="card my-3" *ngFor="let post of active">
+                    <div class="card-header">
+                        <h2 class="card-title">{{post.title}}</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>{{post.body}}</p>
+                        <p>Reactions: {{post.reactions}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
